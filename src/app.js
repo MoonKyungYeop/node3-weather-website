@@ -26,20 +26,6 @@ app.get('', (req,res)=>{
     })
 })
 
-// app.get( '/product', (req, res)=>{
-
-//     if ( !req.query.search ){
-//         return res.send( {
-//             error : 'You must provide a search term'
-//         })
-//     }
-
-//     console.log( req.query.search );
-//     res.send({
-//         product : []
-//     })
-// })
-
 app.get('/about', (req,res)=>{
     res.render('about',{
         title : 'About Me',
