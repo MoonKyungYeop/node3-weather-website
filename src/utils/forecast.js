@@ -8,7 +8,7 @@ const forecast = (latitude, longtitude, callback)=>{
         }else if ( body.error ){
             callback( 'Unable to find location', undefined )
         }else{
-            callback( undefined, `${body.current.weather_descriptions[0]} and humidity is ${body.current.humidity}. It is currently ${ body.current.temperature } degree out. It feels like ${ body.current.feelslike } degress out.`)
+            callback( undefined, `${body.current.weather_descriptions[0]}. It is currently ${ body.current.temperature } degree out. It feels like ${ body.current.feelslike } degress out. The humidity is  ${body.current.humidity}%.`)
         }
     })
 }
